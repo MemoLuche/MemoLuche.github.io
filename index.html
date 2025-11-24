@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Desarrollador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <h2>&lt;TuNombre/&gt;</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hola, soy <span class="highlight">Tu Nombre</span></h1>
+                <p class="hero-subtitle">Desarrollador Full Stack | Creando soluciones digitales</p>
+                <p class="hero-description">
+                    Apasionado por la tecnología y el desarrollo de software. 
+                    Me especializo en crear aplicaciones web modernas y funcionales.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">Contactar</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:tuemail@ejemplo.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy un desarrollador apasionado con experiencia en el desarrollo de aplicaciones web. 
+                        Me encanta aprender nuevas tecnologías y aplicarlas para resolver problemas reales.
+                    </p>
+                    <p>
+                        Actualmente estoy enfocado en mejorar mis habilidades en [tus tecnologías principales] 
+                        y busco oportunidades para colaborar en proyectos desafiantes.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h3>Educación</h3>
+                                <p>Tu carrera / Institución</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Ubicación</h3>
+                                <p>Tu ciudad, País</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open"></i>
+                        <a href="https://github.com/tuusuario/proyecto1" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <h3>Nombre del Proyecto 1</h3>
+                    <p class="project-description">
+                        Descripción breve de lo que hace tu proyecto. Explica el problema que resuelve 
+                        y las tecnologías que utilizaste.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/tuusuario/proyecto1" target="_blank" class="btn-link">
+                            Código <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <!-- Si tienes demo en vivo, descomenta esto:
+                        <a href="#" target="_blank" class="btn-link">
+                            Demo <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        -->
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open"></i>
+                        <a href="https://github.com/tuusuario/proyecto2" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <h3>Nombre del Proyecto 2</h3>
+                    <p class="project-description">
+                        Descripción breve de lo que hace tu proyecto. Explica el problema que resuelve 
+                        y las tecnologías que utilizaste.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/tuusuario/proyecto2" target="_blank" class="btn-link">
+                            Código <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-folder-open"></i>
+                        <a href="https://github.com/tuusuario/proyecto3" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <h3>Nombre del Proyecto 3</h3>
+                    <p class="project-description">
+                        Descripción breve de lo que hace tu proyecto. Explica el problema que resuelve 
+                        y las tecnologías que utilizaste.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API REST</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/tuusuario/proyecto3" target="_blank" class="btn-link">
+                            Código <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Base de Datos</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Herramientas</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            <p class="contact-subtitle">
+                ¿Tienes un proyecto en mente o quieres colaborar? ¡Me encantaría escucharte!
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+            <p>Hecho con <i class="fas fa-heart"></i> y mucho café</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
