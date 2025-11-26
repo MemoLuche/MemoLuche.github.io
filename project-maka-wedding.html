@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAKA Wedding - Event Management System | Guillermo Gordillo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>&lt;Guillermo/&gt;</h2></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <a href="index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            <div class="project-hero-content">
+                <span class="project-badge">Full-Stack Development</span>
+                <h1 class="project-title">MAKA Wedding</h1>
+                <p class="project-tagline">Comprehensive Event Management System for Wedding Planning</p>
+                <div class="project-meta">
+                    <span><i class="fas fa-calendar"></i> 2 weeks sprint</span>
+                    <span><i class="fas fa-users"></i> Team of 5</span>
+                    <span><i class="fas fa-code"></i> Full-Stack</span>
+                </div>
+                <div class="project-hero-links">
+                    <a href="https://makahouse.infinityfreeapp.com" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/MemoLuche" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Challenge</h3>
+                    <p>Design and develop a complete event management system for wedding planners in just 2 weeks, handling complex inventory tracking, service management, and multi-user coordination.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Solution</h3>
+                    <p>Built a full-featured web application with role-based access, real-time inventory management, automated notifications, and comprehensive event tracking using modern web technologies.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Impact</h3>
+                    <p>Delivered a production-ready system managing 40+ events, tracking 100+ inventory items, and handling multiple concurrent users with a clean, intuitive interface.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Event Management</h3>
+                    <ul>
+                        <li>Complete CRUD operations for events</li>
+                        <li>Detailed event timelines and schedules</li>
+                        <li>Budget tracking and payment management</li>
+                        <li>Status workflow (Pending → Confirmed → Completed)</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3>Inventory System</h3>
+                    <ul>
+                        <li>Real-time stock tracking</li>
+                        <li>Item assignment to events</li>
+                        <li>Availability management</li>
+                        <li>Complete history logs</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Service Management</h3>
+                    <ul>
+                        <li>Catalog of available services</li>
+                        <li>Service assignment to events</li>
+                        <li>Pricing and availability tracking</li>
+                        <li>Vendor information management</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Notification System</h3>
+                    <ul>
+                        <li>Real-time notifications</li>
+                        <li>Event reminders</li>
+                        <li>Inventory alerts</li>
+                        <li>Admin broadcast messages</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Role-Based Access</h3>
+                    <ul>
+                        <li>Admin and client roles</li>
+                        <li>Permission-based views</li>
+                        <li>Secure authentication</li>
+                        <li>User management dashboard</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <ul>
+                        <li>Event statistics overview</li>
+                        <li>Budget summaries</li>
+                        <li>Inventory usage reports</li>
+                        <li>Export to CSV</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Stack -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Technical Stack</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">CSS3</span>
+                        <span class="tech-item">JavaScript (ES6+)</span>
+                        <span class="tech-item">Bootstrap 5</span>
+                        <span class="tech-item">Font Awesome</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">PHP 8</span>
+                        <span class="tech-item">PDO</span>
+                        <span class="tech-item">Session Management</span>
+                        <span class="tech-item">RESTful APIs</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">MySQL</span>
+                        <span class="tech-item">13 Related Tables</span>
+                        <span class="tech-item">Complex Queries</span>
+                        <span class="tech-item">Data Integrity</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-tools"></i> Tools & DevOps</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">Git & GitHub</span>
+                        <span class="tech-item">XAMPP</span>
+                        <span class="tech-item">InfinityFree Hosting</span>
+                        <span class="tech-item">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="project-section bg-light">
+        <div class="container">
+            <h2 class="section-title">System Architecture</h2>
+            <div class="architecture-content">
+                <div class="architecture-diagram">
+                    <div class="arch-layer">
+                        <h3>Presentation Layer</h3>
+                        <p>Bootstrap 5 UI • Responsive Design • Dynamic Forms</p>
+                    </div>
+                    <div class="arch-arrow">↓</div>
+                    <div class="arch-layer">
+                        <h3>Application Layer</h3>
+                        <p>PHP Business Logic • Session Management • Input Validation</p>
+                    </div>
+                    <div class="arch-arrow">↓</div>
+                    <div class="arch-layer">
+                        <h3>Data Layer</h3>
+                        <p>MySQL Database • PDO • Prepared Statements</p>
+                    </div>
+                </div>
+                <div class="architecture-highlights">
+                    <h3>Key Architectural Decisions</h3>
+                    <ul>
+                        <li><strong>MVC Pattern:</strong> Separation of concerns with modular file structure</li>
+                        <li><strong>PDO with Prepared Statements:</strong> Protection against SQL injection</li>
+                        <li><strong>Session-Based Auth:</strong> Secure user authentication and role management</li>
+                        <li><strong>Responsive Design:</strong> Mobile-first approach with Bootstrap</li>
+                        <li><strong>Environment Detection:</strong> Automatic switching between local and production configs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Database Schema -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Database Design</h2>
+            <div class="database-info">
+                <p class="db-intro">Designed a robust relational database with 13 interconnected tables supporting complex relationships and data integrity.</p>
+                <div class="db-tables-grid">
+                    <div class="db-table-card">
+                        <h4><i class="fas fa-table"></i> Core Tables</h4>
+                        <ul>
+                            <li><code>usuario</code> - User accounts and roles</li>
+                            <li><code>eventos</code> - Event details and scheduling</li>
+                            <li><code>inventario</code> - Inventory items catalog</li>
+                            <li><code>servicios</code> - Available services</li>
+                        </ul>
+                    </div>
+                    <div class="db-table-card">
+                        <h4><i class="fas fa-link"></i> Junction Tables</h4>
+                        <ul>
+                            <li><code>evento_inventario</code> - Event-inventory relationships</li>
+                            <li><code>evento_servicio</code> - Event-service assignments</li>
+                            <li><code>evento_cronograma</code> - Event timelines</li>
+                        </ul>
+                    </div>
+                    <div class="db-table-card">
+                        <h4><i class="fas fa-history"></i> Tracking Tables</h4>
+                        <ul>
+                            <li><code>operaciones_inventario</code> - Inventory history</li>
+                            <li><code>operaciones_servicios</code> - Service operations</li>
+                            <li><code>notificaciones</code> - User notifications</li>
+                            <li><code>historial_notificaciones</code> - Notification logs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process -->
+    <section class="project-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Development Process</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Week 1: Planning & Core Development</h3>
+                        <ul>
+                            <li>Database schema design and implementation</li>
+                            <li>Authentication system setup</li>
+                            <li>Core CRUD operations for events</li>
+                            <li>Basic UI framework with Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Week 2: Features & Integration</h3>
+                        <ul>
+                            <li>Inventory management system</li>
+                            <li>Service assignment functionality</li>
+                            <li>Notification system implementation</li>
+                            <li>Dashboard and analytics</li>
+                            <li>Testing and bug fixes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Deployment</h3>
+                        <ul>
+                            <li>Production database setup</li>
+                            <li>Environment configuration</li>
+                            <li>Final testing and deployment</li>
+                            <li>Documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges & Solutions -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Challenges & Solutions</h2>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Complex Data Relationships</h3>
+                    </div>
+                    <div class="challenge-body">
+                        <p><strong>Challenge:</strong> Managing multiple interconnected entities (events, inventory, services, users) with complex relationships.</p>
+                        <p><strong>Solution:</strong> Designed normalized database schema with proper foreign keys and junction tables. Implemented PDO with prepared statements for data integrity.</p>
+                    </div>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <i class="fas fa-clock"></i>
+                        <h3>Tight Timeline</h3>
+                    </div>
+                    <div class="challenge-body">
+                        <p><strong>Challenge:</strong> Delivering a full-featured system in just 2 weeks with a team of 5 students.</p>
+                        <p><strong>Solution:</strong> Implemented agile methodology with daily standups, clear task division, and parallel development. Used Bootstrap to accelerate UI development.</p>
+                    </div>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Real-Time Inventory Tracking</h3>
+                    </div>
+                    <div class="challenge-body">
+                        <p><strong>Challenge:</strong> Ensuring inventory availability across multiple concurrent events without conflicts.</p>
+                        <p><strong>Solution:</strong> Implemented transaction-based inventory operations with status tracking and automatic availability calculations.</p>
+                    </div>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <i class="fas fa-users-cog"></i>
+                        <h3>Multi-User Coordination</h3>
+                    </div>
+                    <div class="challenge-body">
+                        <p><strong>Challenge:</strong> Team members working on different features simultaneously without code conflicts.</p>
+                        <p><strong>Solution:</strong> Used Git branching strategy with feature branches, regular merges, and code reviews. Established clear module boundaries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Learnings -->
+    <section class="project-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Key Learnings</h2>
+            <div class="learnings-grid">
+                <div class="learning-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Design</h3>
+                    <p>Gained deep understanding of relational database design, normalization, and complex query optimization.</p>
+                </div>
+                <div class="learning-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Team Collaboration</h3>
+                    <p>Learned effective team coordination, code review practices, and agile development methodologies.</p>
+                </div>
+                <div class="learning-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security Best Practices</h3>
+                    <p>Implemented input validation, prepared statements for SQL injection prevention, and secure session management.</p>
+                </div>
+                <div class="learning-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Full-Stack Development</h3>
+                    <p>Experience building complete application from database to UI, handling all layers of web development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Stats -->
+    <section class="project-section">
+        <div class="container">
+            <h2 class="section-title">Project Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">PHP Files</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">13</div>
+                    <div class="stat-label">Database Tables</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3,500+</div>
+                    <div class="stat-label">Lines of Code</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Weeks Sprint</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Functional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Improvements -->
+    <section class="project-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Potential Enhancements</h2>
+            <div class="improvements-grid">
+                <div class="improvement-item">
+                    <i class="fas fa-lock"></i>
+                    <div>
+                        <h3>Enhanced Security</h3>
+                        <p>Implement password hashing with bcrypt, CSRF protection, and rate limiting</p>
+                    </div>
+                </div>
+                <div class="improvement-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div>
+                        <h3>Mobile Application</h3>
+                        <p>Develop native mobile apps for iOS and Android with React Native</p>
+                    </div>
+                </div>
+                <div class="improvement-item">
+                    <i class="fas fa-credit-card"></i>
+                    <div>
+                        <h3>Payment Integration</h3>
+                        <p>Add Stripe/PayPal for online payments and automated invoicing</p>
+                    </div>
+                </div>
+                <div class="improvement-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email Notifications</h3>
+                        <p>Automated email reminders and updates using PHPMailer or SendGrid</p>
+                    </div>
+                </div>
+                <div class="improvement-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <div>
+                        <h3>Advanced Analytics</h3>
+                        <p>Interactive dashboards with Chart.js for business insights</p>
+                    </div>
+                </div>
+                <div class="improvement-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <div>
+                        <h3>PDF Generation</h3>
+                        <p>Automated contract and invoice generation with digital signatures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="project-cta">
+        <div class="container">
+            <h2>Interested in this project?</h2>
+            <p>Let's discuss how I can bring similar solutions to your team</p>
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="https://makahouse.infinityfreeapp.com" target="_blank" class="btn btn-secondary">View Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Guillermo Gordillo. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> and lots of coffee</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

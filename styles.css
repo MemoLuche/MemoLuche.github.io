@@ -343,6 +343,44 @@ section {
     gap: 1rem;
 }
 
+.overview-card {
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    transition: var(--transition);
+}
+
+/* Featured Project Badge */
+.featured-project {
+    position: relative;
+    background: linear-gradient(135deg, rgba(100, 255, 218, 0.05), rgba(136, 146, 176, 0.05));
+    border: 2px solid var(--primary-color);
+}
+
+.featured-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), #4dd0e1);
+    color: var(--bg-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
 .btn-link {
     color: var(--primary-color);
     text-decoration: none;
