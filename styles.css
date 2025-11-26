@@ -48,6 +48,10 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+a {
+    text-decoration: none;
+}
+
 .navbar .container {
     display: flex;
     justify-content: space-between;
@@ -341,14 +345,6 @@ section {
 .project-links {
     display: flex;
     gap: 1rem;
-}
-
-.overview-card {
-    background-color: var(--bg-light);
-    padding: 1.5rem;
-    border-radius: 10px;
-    border: 1px solid rgba(100, 255, 218, 0.1);
-    transition: var(--transition);
 }
 
 /* Featured Project Badge */
