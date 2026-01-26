@@ -192,14 +192,21 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    margin-top: 3rem;
 }
 
 .feature-card {
-    background: var(--bg-color);
+    background: var(--bg-card);
     padding: 35px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+/* Feature card variant for light background sections */
+.feature-card-light {
+    background: var(--bg-light);
 }
 
 .feature-card:hover {
@@ -724,5 +731,443 @@
 
     .timeline-dot {
         left: 1px;
+    }
+}
+
+/* Additional Utility Classes */
+.project-badge-dev {
+    background: rgba(100,255,218,0.15);
+    color: #64ffda;
+    border: 1.5px solid #64ffda;
+}
+
+.section-dark {
+    background: #112240;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.intro-text-spaced {
+    margin-top: 1.5rem;
+}
+
+.centered-description {
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tech Stack Grid */
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tech-category {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    border: 1px solid var(--border-color);
+}
+
+.tech-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-item-group {
+    margin-bottom: 1rem;
+}
+
+.tech-item-group strong {
+    color: var(--text-primary);
+}
+
+.tech-item-group p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+/* Roadmap Timeline */
+.roadmap-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.roadmap-item {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    border-left: 3px solid var(--primary-color);
+    position: relative;
+}
+
+.roadmap-item-planned {
+    border-left: 3px dashed var(--border-color);
+}
+
+.roadmap-dot {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.roadmap-dot-planned {
+    background: var(--text-secondary);
+    opacity: 0.5;
+}
+
+.roadmap-dot-active {
+    animation: pulse 2s infinite;
+}
+
+.roadmap-content {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    border: 1px solid var(--border-color);
+}
+
+.roadmap-content-planned {
+    background: var(--bg-light);
+}
+
+.roadmap-content-active {
+    border: 2px solid var(--primary-color);
+}
+
+.roadmap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.roadmap-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.roadmap-header-planned h3 {
+    color: var(--text-secondary);
+}
+
+.roadmap-status {
+    font-weight: 600;
+}
+
+.roadmap-status-completed {
+    color: var(--success-color);
+}
+
+.roadmap-status-active {
+    color: var(--primary-color);
+}
+
+.roadmap-status-planned {
+    color: var(--text-secondary);
+}
+
+.roadmap-description {
+    color: var(--text-secondary);
+    margin: 0.5rem 0 0 0;
+}
+
+/* Highlight Cards */
+.highlight-grid {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.highlight-card {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    border: 1px solid var(--border-color);
+}
+
+.highlight-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.highlight-card p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Learning Grid */
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learning-item h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.learning-item h3 i {
+    color: var(--primary-color);
+}
+
+.learning-item ul {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* Responsive learning grid */
+@media (max-width: 1200px) {
+    .learning-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Status Card */
+.status-card {
+    background: var(--bg-card);
+    padding: 3rem;
+    border-radius: 12px;
+    color: var(--text-primary);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    border: 1.5px solid var(--primary-color);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.status-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.status-card p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.status-info {
+    background: rgba(100,255,218,0.08);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.status-info p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--primary-color);
+}
+
+.status-info strong {
+    font-weight: bold;
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-member {
+    grid-column: span 2;
+}
+
+/* Center last 2 items - start at columns that center them */
+.team-grid .team-member:nth-child(4) {
+    grid-column: 2 / 4;
+}
+
+.team-grid .team-member:nth-child(5) {
+    grid-column: 4 / 6;
+}
+
+/* Responsive: 2 columns on tablets */
+@media (max-width: 968px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team-member {
+        grid-column: span 1;
+    }
+    
+    .team-grid .team-member:nth-child(4),
+    .team-grid .team-member:nth-child(5) {
+        grid-column: auto;
+    }
+}
+
+/* Responsive: 1 column on mobile */
+@media (max-width: 640px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.team-member {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary-color);
+}
+
+.team-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 3px solid var(--primary-color);
+    overflow: hidden;
+}
+
+.team-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.team-role {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.team-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.team-github:hover {
+    color: var(--primary-color);
+}
+
+.team-github i {
+    font-size: 1.1rem;
+}
+/* Tech Stack Tabs */
+.tech-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.tech-tab {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-tab::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.tech-tab:hover {
+    color: var(--primary-color);
+}
+
+.tech-tab.active {
+    color: var(--primary-color);
+}
+
+.tech-tab.active::after {
+    transform: scaleX(1);
+}
+
+.tech-tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.tech-tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

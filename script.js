@@ -89,3 +89,18 @@ const footerYear = document.querySelector('.footer p');
 if (footerYear && footerYear.textContent.includes('2024')) {
     footerYear.textContent = footerYear.textContent.replace('2024', currentYear);
 }
+
+// Tech Stack Tabs
+document.querySelectorAll('.tech-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        const targetTab = tab.dataset.tab;
+        
+        // Remover active de todos los tabs y contenidos
+        document.querySelectorAll('.tech-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tech-tab-content').forEach(content => content.classList.remove('active'));
+        
+        // Agregar active al tab clickeado y su contenido
+        tab.classList.add('active');
+        document.getElementById(targetTab).classList.add('active');
+    });
+});
