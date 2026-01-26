@@ -230,11 +230,10 @@ section {
     background-color: var(--bg-light);
 }
 
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
+.about-text {
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
 .about-text p {
     font-size: 1.1rem;
     color: var(--text-light);
@@ -250,7 +249,7 @@ section {
 
 .info-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     padding: 1.5rem;
     background-color: var(--bg-color);
@@ -261,15 +260,22 @@ section {
 .info-item i {
     font-size: 1.8rem;
     color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.info-item div {
+    flex: 1;
 }
 
 .info-item h3 {
     color: var(--heading-color);
     margin-bottom: 0.5rem;
+    margin-top: 0;
 }
 
 .info-item p {
     color: var(--text-light);
+    margin: 0;
 }
 
 /* ========== Projects Section ========== */
@@ -483,6 +489,10 @@ section {
 }
 
 /* ========== Contact Section ========== */
+.contact {
+    background-color: var(--bg-light);
+}
+
 .contact-subtitle {
     text-align: center;
     color: var(--text-light);
@@ -506,7 +516,7 @@ section {
     align-items: center;
     gap: 1.5rem;
     padding: 1.5rem;
-    background-color: var(--bg-light);
+    background-color: var(--bg-color);
     border-radius: 10px;
     border: 1px solid rgba(100, 255, 218, 0.1);
     transition: var(--transition);
@@ -539,7 +549,7 @@ section {
 
 /* ========== Footer ========== */
 .footer {
-    background-color: var(--bg-light);
+    background-color: var(--bg-color);
     padding: 2rem 0;
     text-align: center;
     border-top: 1px solid rgba(100, 255, 218, 0.1);
